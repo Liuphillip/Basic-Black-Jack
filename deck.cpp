@@ -1,0 +1,123 @@
+#include "deck.hpp"
+
+deck::deck(){
+  cards[0]=1;
+  cards[1]=1;
+  cards[2]=1;
+  cards[3]=1;
+  cards[4]=2;
+  cards[5]=2;
+  cards[6]=2;
+  cards[7]=2;
+  cards[8]=3;
+  cards[9]=3;
+  cards[10]=3;
+  cards[11]=3;
+  cards[12]=4;
+  cards[13]=4;
+  cards[14]=4;
+  cards[15]=4;
+  cards[16]=5;
+  cards[17]=5;
+  cards[18]=5;
+  cards[19]=5;
+  cards[20]=6;
+  cards[21]=6;
+  cards[22]=6;
+  cards[23]=6;
+  cards[24]=7;
+  cards[25]=7;
+  cards[26]=7;
+  cards[27]=7;
+  cards[28]=8;
+  cards[29]=8;
+  cards[30]=8;
+  cards[31]=8;
+  cards[32]=9;
+  cards[33]=9;
+  cards[34]=9;
+  cards[35]=9;
+  cards[36]=10;
+  cards[37]=10;
+  cards[38]=10;
+  cards[39]=10;
+  cards[40]=10;
+  cards[41]=10;
+  cards[42]=10;
+  cards[43]=10;
+  cards[44]=10;
+  cards[45]=10;
+  cards[46]=10;
+  cards[47]=10;
+  cards[48]=11;
+  cards[49]=11;
+  cards[50]=11;
+  cards[51]=11;
+}
+
+int deck::getCard(){
+  int randcard;
+  int card;
+  srand(time(0));
+  randcard = rand() % 52;
+  card=cards[randcard];
+  cards[randcard]=0;
+  return card;
+}
+
+void deck::newDeck(){
+  cards[0]=1;
+  cards[1]=1;
+  cards[2]=1;
+  cards[3]=1;
+  cards[4]=2;
+  cards[5]=2;
+  cards[6]=2;
+  cards[7]=2;
+  cards[8]=3;
+  cards[9]=3;
+  cards[10]=3;
+  cards[11]=3;
+  cards[12]=4;
+  cards[13]=4;
+  cards[14]=4;
+  cards[15]=4;
+  cards[16]=5;
+  cards[17]=5;
+  cards[18]=5;
+  cards[19]=5;
+  cards[20]=6;
+  cards[21]=6;
+  cards[22]=6;
+  cards[23]=6;
+  cards[24]=7;
+  cards[25]=7;
+  cards[26]=7;
+  cards[27]=7;
+  cards[28]=8;
+  cards[29]=8;
+  cards[30]=8;
+  cards[31]=8;
+  cards[32]=9;
+  cards[33]=9;
+  cards[34]=9;
+  cards[35]=9;
+  cards[36]=10;
+  cards[37]=10;
+  cards[38]=10;
+  cards[39]=10;
+  cards[40]=10;
+  cards[41]=10;
+  cards[42]=10;
+  cards[43]=10;
+  cards[44]=10;
+  cards[45]=10;
+  cards[46]=10;
+  cards[47]=10;
+  cards[48]=11;
+  cards[49]=11;
+  cards[50]=11;
+  cards[51]=11;
+}
+//to create deck, create array with 52 items.
+//to choose random card  set randvar to rand()%52 use array[randvar] then delete item from array;
