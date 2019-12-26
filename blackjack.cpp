@@ -1,5 +1,4 @@
 /* Basic black jack. No doubledowns, splits, or insurance.
-Total time: 4 hours
 By: Phillip Liu*/
 #include <iostream>
 #include <time.h>
